@@ -1,0 +1,35 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+
+
+/* 
+    Created on : Dec 4, 2015, 5:18:08 PM
+    Author     : Rodney
+*/
+
+
+/* Responsive: Portrait tablets and up */
+
+@media screen and (min-width: 768px) {
+
+    /* Remove the padding we set earlier */
+    .masthead,
+    .marketing,
+    .footer {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+
+/* COUNTER 
+----------------------------------------------------*/
+
+#counter {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 0px;
+}

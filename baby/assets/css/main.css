@@ -1,0 +1,245 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+
+
+/* 
+    Created on : Dec 4, 2015, 5:17:52 PM
+    Author     : Rodney
+*/
+
+
+/* CUSTOMIZE INDEX
+-------------------------------------------------- */
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #5d6471;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    padding-top: 0px;
+    background: #f2f2f2;
+}
+
+#h1Result {
+    font-size: 60 px;
+}
+
+.btn {
+    font-size: 26px;
+    line-height: 20px;
+}
+
+.boy {
+    background-color: #89cff0;
+}
+
+.girl {
+    background-color: #FFC0CB;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.c-red {
+    color: red;
+}
+
+.center-image {
+    margin: 0 auto;
+    display: block;
+}
+
+.italic {
+    font-style: italic;
+}
+
+p,
+.video {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.fa-holder {
+    padding-left: 35px;
+    position: relative;
+}
+
+.fa-holder .fa {
+    position: absolute;
+    left: 0;
+    line-height: 23px;
+}
+
+
+/* added for wrapper */
+
+.wrapper {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.page-row {
+    display: table-row;
+    height: 1px;
+}
+
+.page-row-expanded {
+    height: 100%;
+}
+
+.content-container {
+    padding: 50px 0;
+}
+
+
+/*End wrapper*/
+
+
+/* COUNTER 
+----------------------------------------------------*/
+
+#counter {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 0px;
+}
+
+.standard {
+    text-align: center;
+}
+
+
+/* BATTERY
+----------------------------------------------------*/
+
+.wrapperBattery {
+    width: 200px;
+    margin: 30px auto;
+}
+
+.battery,
+.battery2 {
+    position: relative;
+    display: block;
+    margin: 20px 65px;
+    background: transparent;
+    width: 10px;
+    height: 28px;
+    float: left;
+}
+
+.battery2 {
+    margin-top: 48px;
+    background: rgb(157, 213, 58);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(157, 213, 58, 1) 0%, rgba(161, 213, 79, 1) 50%, rgba(128, 194, 23, 1) 51%, rgba(124, 188, 10, 1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(157, 213, 58, 1)), color-stop(50%, rgba(161, 213, 79, 1)), color-stop(51%, rgba(128, 194, 23, 1)), color-stop(100%, rgba(124, 188, 10, 1)));
+    background: -webkit-linear-gradient(top, rgba(157, 213, 58, 1) 0%, rgba(161, 213, 79, 1) 50%, rgba(128, 194, 23, 1) 51%, rgba(124, 188, 10, 1) 100%);
+    background: -o-linear-gradient(top, rgba(157, 213, 58, 1) 0%, rgba(161, 213, 79, 1) 50%, rgba(128, 194, 23, 1) 51%, rgba(124, 188, 10, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(157, 213, 58, 1) 0%, rgba(161, 213, 79, 1) 50%, rgba(128, 194, 23, 1) 51%, rgba(124, 188, 10, 1) 100%);
+    background: linear-gradient(to bottom, rgba(157, 213, 58, 1) 0%, rgba(161, 213, 79, 1) 50%, rgba(128, 194, 23, 1) 51%, rgba(124, 188, 10, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#9dd53a', endColorstr='#7cbc0a', GradientType=0);
+}
+
+.battery:before,
+.battery2:before {
+    content: "";
+    display: block;
+    background: transparent;
+    border: 6px solid black;
+    margin: -12px;
+    width: 85px;
+    height: 40px;
+    position: absolute;
+    border-radius: 2px;
+    /*  -moz-box-shadow: 0 0 5px 5px black;
+    -webkit-box-shadow: 0 0 5px 5px black;
+    box-shadow: -2px 0 5px 2px black; */
+    z-index: 2000;
+}
+
+.battery:after,
+.battery2:after {
+    content: "";
+    display: block;
+    background: transparent;
+    border: 4px solid black;
+    margin: 0px 80px;
+    width: 6px;
+    height: 16px;
+    position: absolute;
+    border-radius: 2px;
+    /* -moz-box-shadow: 0 0 5px 5px black;
+    -webkit-box-shadow: 0 0 5px 5px black;
+    box-shadow: 2px 0 5px 2px black; */
+    z-index: 0;
+}
+
+@-webkit-keyframes charging {
+    from {
+        width: 0px;
+        background: #fff;
+    }
+    to {
+        width: 72px;
+        background: #FFC0CB;
+    }
+}
+
+@-webkit-keyframes charging2 {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 72px;
+    }
+}
+
+.charging {
+    -webkit-animation: charging 20s ease-in-out infinite;
+}
+
+.charging2 {
+    -webkit-animation: charging2 20s ease-in-out infinite;
+}
+
+.charging_txt {
+    font-family: arial, helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    clear: both;
+    color: black;
+}
+
+@-webkit-keyframes glow {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.glow {
+    -webkit-animation: glow 3s ease-in-out infinite;
+    -webkit-animation-direction: alternate;
+}
+
+#countdown {
+    font-size: 30;
+}

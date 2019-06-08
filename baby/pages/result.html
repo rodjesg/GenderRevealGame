@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gender Reveal Result: Girl</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--- Bootstrap -->
+    <!--- <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css"> -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.custom.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+    <!--- Animate -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/animate.css">
+    <!-- Personal CSS -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/mobile.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/result.css">
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+    <style>
+        body {
+            background-color: #FFC0CB;
+            margin: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <container class="standard">
+        <h1> Gender reveal result</h1>
+        <h2> The baby is..</h2>
+        <div class="wrapperBattery">
+            <div class="battery charging"></div>
+            <div class="charging_txt glow">Loading...</div>
+        </div>
+        <p id="countdown"></p>
+    </container>
+    <container class="standard">
+        <div id="h1Result">
+            <h1>IT'S A GIRL!!!!!!</h1> </div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        </div>
+        <embed src="http://asmaa.site/Eid.mp3" width="180" height="90" loop="false" autostart="false" hidden="true" />
+        <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Nov 12, 2019 00:00:00").getTime();
+            // Update the count down every 1 second
+            var x = setInterval(function () {
+                // Get today's date and time
+                var now = new Date().getTime();
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                // Output the result in an element with id="demo"
+                document.getElementById("countdown").innerHTML = days + " days " + hours + " h " + minutes + " m " + seconds + " s left..";
+                // If the count down is over, write some text 
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("countdown").innerHTML = "EXPIRED";
+                }
+            }, 1000);
+        </script>
+</body>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="assets/js/bootstrap.min.js"></script>
+
+</html>
