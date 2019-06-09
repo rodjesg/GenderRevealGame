@@ -70,6 +70,7 @@ p,
 .video {
     margin-top: 2em;
     margin-bottom: 2em;
+    text-align: center;
 }
 
 .fa-holder {
@@ -194,6 +195,7 @@ p,
         width: 0px;
         background: #fff;
     }
+
     to {
         width: 72px;
         background: #FFC0CB;
@@ -204,6 +206,7 @@ p,
     from {
         width: 0px;
     }
+
     to {
         width: 72px;
     }
@@ -230,6 +233,7 @@ p,
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }

@@ -28,17 +28,16 @@
 
 <body>
     <container class="standard">
-        <h1> Gender reveal result</h1>
+        <h1> Gender reveal result:</h1> </container>
+    <container class="standard">
+        <div id="h1Result">
+            <h1>IT'S A GIRL!!!!!!</h1> </div>
         <h2> The baby is..</h2>
         <div class="wrapperBattery">
             <div class="battery charging"></div>
             <div class="charging_txt glow">Loading...</div>
         </div>
         <p id="countdown"></p>
-    </container>
-    <container class="standard">
-        <div id="h1Result">
-            <h1>IT'S A GIRL!!!!!!</h1> </div>
         <div class="balloon"></div>
         <div class="balloon"></div>
         <div class="balloon"></div>
@@ -64,7 +63,7 @@
                 var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
                 var seconds = Math.floor((distance % (1000 * 60)) / 1000);
                 // Output the result in an element with id="demo"
-                document.getElementById("countdown").innerHTML = days + " days " + hours + " h " + minutes + " m " + seconds + " s left..";
+                document.getElementById("countdown").innerHTML = days + " days " + hours + " h " + minutes + " m " + seconds + " s left to go..";
                 // If the count down is over, write some text 
                 if (distance < 0) {
                     clearInterval(x);
